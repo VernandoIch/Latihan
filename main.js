@@ -207,36 +207,64 @@
 
 // menghitung(200,100)
 
-function aturanmaen (nama,umur,duit){
-    if (nama === ''){
-        console.log('lau ga boleh masuk bro')
-    }
-    else {
-        console.log('punya nama')
-        if (umur <=17){
-            console.log('bisa dapet juiceeee');
-            if (duit >50000){
-            console.log('duitnye cukup buat juice');
-            }
-            else {
-                console.log('duit lau kurang bro, pulang ae!');
-            }
+// function aturanmaen (nama,umur,duit){
+//     if (nama === ''){
+//         console.log('lau ga boleh masuk bro')
+//     }
+//     else {
+//         console.log('punya nama')
+//         if (umur <=17){
+//             console.log('bisa dapet juiceeee');
+//             if (duit >50000){
+//             console.log('duitnye cukup buat juice');
+//             }
+//             else {
+//                 console.log('duit lau kurang bro, pulang ae!');
+//             }
     
-        }
-        else if (umur >= 17){
-            console.log('boleh pesen alkohol');
-            if (duit >=300000){
-            console.log('bisa beli alkohol bro',duit-300000);
+//         }
+//         else if (umur >= 17){
+//             console.log('boleh pesen alkohol');
+//             if (duit >=300000){
+//             console.log('bisa beli alkohol bro',duit-300000);
     
-            }
-            else {
-                console.log('kaga bisa beli mabok2an bro');
-            }
+//             }
+//             else {
+//                 console.log('kaga bisa beli mabok2an bro');
+//             }
         
+//         }
+
+//     }
+
+// }
+
+// aturanmaen('rey',21,400000)
+
+function jalanjalanmen (duitlo,umurlo,pukul,pengecekkan){
+    if (duitlo > 5000000){
+        console.log('lau boleh ikut ke bali');
+        if(umurlo >21){
+            console.log('bisa masuk reggea bar');
+            if (pengecekkan !== 'stempel'){
+                console.log('cabut lo');
+            } else {
+                if(pukul > 19.00){
+                    console.log('bisa beli apa aje');
+                }
+                else {
+                    console.log('ada minimum order bro');
+                }
+            }
         }
-
+        else {
+        console.log('jaga villa aeh lau')
+        }
     }
-
+    else{
+        console.log('diem ae lau dirumah');
+    }
 }
+    
 
-aturanmaen('rey',21,400000)
+jalanjalanmen(5100000,22,19.00,"belum stempel")
