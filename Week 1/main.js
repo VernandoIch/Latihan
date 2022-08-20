@@ -241,30 +241,77 @@
 
 // aturanmaen('rey',21,400000)
 
-function jalanjalanmen (duitlo,umurlo,pukul,pengecekkan){
-    if (duitlo > 5000000){
-        console.log('lau boleh ikut ke bali');
-        if(umurlo >21){
-            console.log('bisa masuk reggea bar');
-            if (pengecekkan !== 'stempel'){
-                console.log('cabut lo');
-            } else {
-                if(pukul > 19.00){
-                    console.log('bisa beli apa aje');
-                }
-                else {
-                    console.log('ada minimum order bro');
-                }
-            }
-        }
-        else {
-        console.log('jaga villa aeh lau')
-        }
-    }
-    else{
-        console.log('diem ae lau dirumah');
-    }
-}
+// function jalanjalanmen (duitlo,umurlo,pukul,pengecekkan){
+//     if (duitlo > 5000000){
+//         console.log('lau boleh ikut ke bali');
+//         if(umurlo >21){
+//             console.log('bisa masuk reggea bar');
+//             if (pengecekkan !== 'stempel'){
+//                 console.log('cabut lo');
+//             } else {
+//                 if(pukul > 19.00){
+//                     console.log('bisa beli apa aje');
+//                 }
+//                 else {
+//                     console.log('ada minimum order bro');
+//                 }
+//             }
+//         }
+//         else {
+//         console.log('jaga villa aeh lau')
+//         }
+//     }
+//     else{
+//         console.log('diem ae lau dirumah');
+//     }
+// }
     
 
-jalanjalanmen(5100000,22,19.00,"belum stempel")
+// jalanjalanmen(5100000,22,19.00,"belum stempel")
+
+function dufan (kodebuk,tinggi,perangkat,waktumain,umur,waktuoperasional){
+    if (waktuoperasional >9.00){
+        console.log('boleh antri');
+        if (kodebuk !== 'false'){
+            console.log('sudah punya tiket');
+             console.log('user boleh masuk')
+             if ( waktuoperasional <21.00){
+                if (tinggi >160 && tinggi <200){
+                    console.log('bisa main hailintar yaaa');
+                    if (perangkat === 'bawa hp'){
+                        console.log('dicek dulu yaaa');
+                    } 
+                    else {
+                        console.log('bisa langsung main');
+                        if (waktumain !== 'tidak selesai'){
+                            console.log('user harus langsung turun')
+                        }
+                        else {
+                            console.log('dikenakan sanksi');
+                        }
+                    }
+                    
+                }      
+
+             }
+             else {
+                console.log('kamu harus pulang');
+             }
+           
+    
+        }
+        else {
+            console.log('hanya boleh 2-3 wahana');
+            if (tinggi <160 && umur <15){
+                console.log('dapet hadiah, boleh main di dufan malam');
+            }
+        }
+        
+    }
+    else {
+        console.log('beli tiket dulu bang');
+    }
+    
+}
+
+dufan(9.10,'false','sudah punya tiket',180)
