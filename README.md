@@ -1,2 +1,2 @@
-# Latihan-Week-1
+# Latihan
 Introduction
